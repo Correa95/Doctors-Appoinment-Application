@@ -1,0 +1,29 @@
+.homeContent {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background: #333;
+  justify-content: center;
+}
+.homeContent .Content {
+  width: 40%;
+  height: 60%;
+  color: red;
+  border: 2px solid red;
+}
+.homeContent .Content p {
+  font-size: 26px;
+  color: red;
+}
+
+.homeContent .Content h3 {
+  font-size: 18px;
+  color: red;
+}
+.homeContent .images {
+  width: 40%;
+  height: 60%;
+  color: red;
+  border: 2px solid red;
+}

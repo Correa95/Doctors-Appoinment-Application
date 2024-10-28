@@ -1,0 +1,34 @@
+.specialistContainer {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.specialistContainer .specialist {
+  display: flex;
+  justify-content: center;
+}
+
+.specialistContainer .specialist .specialistMenu {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid red;
+}
+.specialistContainer .specialist .specialistMenu img {
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.specialistContainer .specialist .specialistMenu h1 {
+  font-size: 18px;
+}

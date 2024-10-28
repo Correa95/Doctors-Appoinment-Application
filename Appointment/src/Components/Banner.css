@@ -1,0 +1,36 @@
+.bannerContainer {
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  /* background: #333; */
+  /* color: #fff; */
+}
+.bannerContainer .bannerContent {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+}
+.bannerContainer .bannerImage {
+  width: 30%;
+  height: 80%;
+  border: 2px solid red;
+}
+.bannerContainer .bannerContent p {
+  font-size: 26px;
+  font-family: "Popping" sans-serif;
+  font-weight: 700;
+}
+.bannerContainer .bannerContent p button {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 5px;
+}

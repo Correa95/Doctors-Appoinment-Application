@@ -1,0 +1,52 @@
+.doctorsContainer {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  border: 2px solid red;
+}
+.doctorsContainer .doctors {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  place-items: center;
+  border: 2px solid red;
+}
+.doctorsContainer .doctors .doctorsCard {
+  width: 350px;
+  height: 400px;
+  margin: 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.doctorsContainer .doctors .doctorsCard img {
+  width: 100%;
+  height: 250px;
+  border: 2px solid red;
+}
+.doctorsContainer .doctors .doctorsCard .available {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.doctorsContainer .doctors .doctorsCard .available p {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  background: green;
+  border-radius: 50%;
+}
+.doctorsContainer .doctors .doctorsCard .available small {
+  color: green;
+  margin-left: 10px;
+}
+.doctorsContainer .btnMore {
+  font-size: 20px;
+  width: 100px;
+  height: 60px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+}
