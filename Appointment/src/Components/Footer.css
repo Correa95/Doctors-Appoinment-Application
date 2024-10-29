@@ -1,10 +1,43 @@
 .footerContainer {
   width: 100%;
   height: 300px;
+  /* border: 2px solid red; */
+}
+.footerContainer .footerContent {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
   border: 2px solid red;
 }
-/* .footerContainer .mission {
-} */
+.footerContainer .logo {
+  width: 33%;
+  font-size: 18px;
+  padding: 20px;
+  border: 2px solid red;
+}
+.footerContainer .mission {
+  width: 33%;
+  padding: 20px;
+  border: 2px solid red;
+}
+.footerContainer .mission ul li {
+  font-size: 18px;
+  list-style: none;
+  padding: 5px;
+}
+.footerContainer .contact {
+  width: 33%;
+  padding: 20px;
+  border: 2px solid red;
+}
+.footerContainer .contact ul li {
+  font-size: 20px;
+  list-style: none;
+  padding: 5px;
+}
+.footerContainer .copyRight small {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

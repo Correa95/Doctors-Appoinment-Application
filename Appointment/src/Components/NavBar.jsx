@@ -16,7 +16,7 @@ function NavBar() {
     <header className="header">
       <div className="logo">
         <Link to="/">
-          <img src={assets.logo} alt="" />
+          <img src={assets.logo} alt="" onClick={() => navigate("./")} />
         </Link>
       </div>
       <nav className="navBar">

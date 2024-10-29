@@ -1,0 +1,24 @@
+.allDoctorsContainer {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+.allDoctorsContainer .doctorFilter {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+/* .allDoctorsContainer .filterDoctorsContainer {
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(300px, 1fr));
+    gap: 20px;
+  } */
+/* .allDoctorsContainer .doctors .doctor {
+    border: 2px solid red;
+  } */
