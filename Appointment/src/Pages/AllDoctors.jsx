@@ -1,5 +1,5 @@
 import AllDoc from "../Components/AllDoc";
-
+import "./AllDoctors";
 function AllDoctors() {
   return (
     <div>

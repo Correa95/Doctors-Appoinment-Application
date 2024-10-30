@@ -1,16 +1,30 @@
-// import { useContext, useState } from "react";
-// import { useParams } from "react-router-dom";
-// import { AppContext } from "../Context/AppContext";
+import { useContext, useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { AppContext } from "../Context/AppContext";
 import { doctors } from "../assets/assets_frontend/assets";
-import "./AllDoc";
+import "./AllDoc.css";
 
 function AllDoc() {
-  //   const { speciality } = useParams();
-  //   const [filterDoctors, setFilterDoctors] = useState([]);
+  const { speciality } = useParams();
+
+  const [filterDoctors, setFilterDoctors] = useState([]);
+  const navigate = useNavigate();
+
+  const filterForSpecialist = () => {
+    if (speciality) {
+      setFilterDoctors(doctors.filter((doc) => doc.speciality === speciality));
+    } else {
+      setFilterDoctors(doctors);
+    }
+  };
+  useEffect(() => {
+    filterForSpecialist();
+  }, [doctors, speciality]);
+
   return (
-    <main className="allDoctorsContainer">
-      <h1>Browse through the doctors specialist.</h1>
+    <section className="allDoctorsContainer">
       <div className="doctorFilter">
+        <h1>Browse through the doctors specialist.</h1>
         <ul>
           <li>General Physician</li>
           <li>Gynecologist</li>
@@ -21,23 +35,20 @@ function AllDoc() {
         </ul>
       </div>
       <div className="filterDoctorsContainer">
-        {doctors.map((doc, index) => (
+        {filterDoctors.map((doc, index) => (
           <div
             className="filterDoctorsCard"
             key={index}
-            // onClick={() => navigate(`/appointment/${doctor.id}`)}
+            onClick={() => navigate(`/appointment/${doc.id}`)}
           >
             <img src={doc.image} alt="Doctor Image" />
-            <div className="available">
-              <p></p>
-              <small>Available</small>
-            </div>
-            <h1>{doc.name}</h1>
+
+            <p>{doc.name}</p>
             <h3>{doc.speciality}</h3>
           </div>
         ))}
       </div>
-    </main>
+    </section>
   );
 }
 
